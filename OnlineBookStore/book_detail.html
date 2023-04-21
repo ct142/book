@@ -1,0 +1,136 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vo Chau Thang
+  ID: s3927178
+  Acknowledgement: github, w3school.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap">
+    <title>Book Detail</title>
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="index.html"><img src="image/logo-removebg-preview.png" alt="Logo"></a>
+		</div>
+        <input type="checkbox" id="check">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="category.html">Books</a></li>
+				<li><a href="book_detail.html">Book details</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+        <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+        <div class="nav-search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+    </header>  
+    <main>
+        
+        <div class="container background" style="margin-top: 30px;">
+            <div class="left">
+              <img src="image/large-image.jpg" alt="Large Image">
+            </div>
+            <div class="right">
+              <div class="top">
+                <img src="image/small-3-removebg-preview.png" alt="Small Image 1">
+              </div>
+              <div class="middle">
+                <img src="image/small-2-removebg-preview.png" alt="Small Image 2">
+              </div>
+              <div class="bottom">
+                <img src="image/small-1.jpg" alt="Small Image 3">
+              </div>
+            </div>
+            <div class="info">
+              <h1 style="font-size: 3.0rem;">The Power of Now: A Guide to Spiritual Enlightenment</h1>
+              <p>Author: Eckhart Tolle</p>
+              <h2 class="book-price">$19.99</h2> 
+
+            </div>
+        </div>
+        <div class="container box-detail">      
+          <div class="top-detail">
+            <div class="box1"></div>
+            <div class="box2">
+              <button class="add-to-cart-button">Add to cart</button>
+              <div class="carticon">
+                <i class="fa fa-share-alt" style="font-size:24px;"></i>
+                <i class="fa fa-bookmark-o" style="font-size:24px"></i>
+                <i class="fa fa-download" style="font-size:24px"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-detail">
+            <div class="six-column">
+                <b>Description</b>
+                <br>
+                <p>It's no wonder that The Power of Now has sold over 2 million copies worldwide and has been translated into over 30 foreign languages. Much more than simple principles and platitudes, the book takes readers on an inspiring spiritual journey to find their true and deepest self and reach the ultimate in personal growth and spirituality: the discovery of truth and light.
+                    <br>
+                    <br>
+                    In the first chapter, Tolle introduces readers to enlightenment and its natural enemy, the mind. He awakens readers to their role as a creator of pain and shows them how to have a pain-free identity by living fully in the present. The journey is thrilling, and along the way, the author shows how to connect to the indestructible essence of our Being, "the eternal, ever-present One Life beyond the myriad forms of life that are subject to birth and death."
+                    <br>
+                    <br>
+                    Featuring a new preface by the author, this paperback shows that only after regaining awareness of Being, liberated from Mind and intensely in the Now, is there Enlightenment.</p>
+            </div>
+            <div class="four-column">
+                <b>Publisher</b>
+                <p>New World Library (August 19, 2004)</p>
+                <b>Language </b>
+                <p>English</p>
+                <b>Paperback</b>
+                <p>236 pages</p>
+                <b>Item Weight</b>
+                <p>12 ounces</p>
+                <b>Dimensions</b>
+                <p>6 x 0.5 x 8.5 inches</p>
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+
+	<footer>
+        <div class="footer">
+            <div class="footer-logo" style="max-width:500px">
+                <img src="image/logo-removebg-preview.png" alt="" srcset="" style="max-width:100%">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="/copyright">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-network">
+                    <i class="fa fa-instagram" style="color: white; font-size: 24px;"></i>
+                    <i class="fa fa-facebook-f" style="color: white;font-size: 24px;"></i>
+                    <i class="fa fa-youtube-play" style="color: white; font-size: 24px;"></i>
+                    <i class="fa fa-twitter" style="color: white; font-size: 24px;"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color:white">Copyright © 2023 Book Store | Powered by Book Store</p>
+        </div>
+    </footer>
+
+</body>
+</html>

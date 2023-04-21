@@ -1,0 +1,957 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vo Chau Thang
+  ID: s3927178
+  Acknowledgement: github, w3school.
+ */
+ 
+body{
+    background-color: #f2f5f7;
+    margin:0px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo img {
+	width: 100%;
+	max-width: 200px;
+}
+
+nav {
+	flex-grow: 1;
+	margin-left: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    color: #5f4ecb;
+}
+
+nav a {
+	text-decoration: none;
+	color: #333;
+}
+
+.nav-search form {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+  }
+  
+.nav-search input[type="text"] {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 25px 5px 10px;
+  }
+  
+.nav-search button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: #211f1f6e;
+    margin-left: -30px;
+    padding: 5px;
+    position: relative;
+    right: 20px;
+  }
+  
+  .fa-search {
+    font-size: 18px;
+  }
+  
+.book-category h1{
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.book a{
+    text-decoration: none;
+	color: #333;
+}
+
+.checkbtn{
+    font-size: 30px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+
+.new_release {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding:50px;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+}
+  
+.new_content {
+    flex: 1;
+    order: 1;
+    padding-right: 80px;
+    flex-basis: 40%
+}
+.new_image img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.new_image {
+    flex-basis:60%;
+    flex: 1;
+    order: 2;
+}
+
+.btn_buy{
+    color: #5f4ecb;
+    background-color: transparent;;
+    border-color: #5f4ecb;
+}
+
+.btn_buy:hover{
+    background-color: #5f4ecb;
+    color: white;
+}
+
+.seperate{
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-bottom: 2.5px solid #5f4ecb;
+}
+
+.bestselling-book{
+    background-color: white; 
+    padding-top: 5px;
+}
+.new-book{
+    background-color: white; 
+    padding-top:3px; margin-top: 5px;
+}
+
+.recommended-book{
+    margin: 85px 0px;
+}
+
+.bestselling, .recommended, .new-arrivals{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 65px ;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0px 35px
+}
+
+.book {
+    width: 300px;
+    margin: 10px;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+p,a{
+    font-family: 'EB Garamond',serif; 
+}
+
+h1{
+    font-family: 'EB Garamond',serif; 
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+h3, h4 {
+    margin: 0;
+    font-weight: 600;
+    font-family: 'EB Garamond',serif;
+    line-height: 1.25em;
+}
+
+.book p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.read-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.read-more button, .buttons button{
+    background-color: transparent;
+    border: 1px solid #5f4ecb;
+    color:#5f4ecb;
+}
+
+.read-more button:hover, .buttons button:hover{
+    background-color: #5f4ecb;
+    color: white;
+}
+
+.youtube-icon {
+    width: 100px;
+    height: 100px;
+    background-image: url('image/kisspng-button-computer-icons-clip-art-5ae0396ee7fa66.6500237215246442069502.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.lastest {
+    margin-top: 150px;
+    display: flex;
+    background-image: url('image/background_lastest.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: 200%;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    /* height: 210vh; */
+}
+
+
+.text{
+    width: 50%;
+    color: #ffffff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.one_line{
+    display:flex;
+    margin-bottom: 10px;
+}
+
+.one_line h3, .oneline h4{
+    margin-left: 10px;
+   height: 50px; 
+   line-height: 50px;
+}
+
+.more-video{
+    text-align: center;
+}
+
+.video1{
+    width: 368px;
+    height: 240px;
+    margin: 20px;
+    background-image: url('image/video1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.youtube-icon-1{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url('image/kisspng-button-computer-icons-clip-art-5ae0396ee7fa66.6500237215246442069502.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.video2{
+    width: 368px;
+    height: 240px;
+    margin: 20px;
+    background-image: url('image/video2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video3{
+    width: 368px;
+    height: 240px;
+    margin: 20px;
+    background-image: url('image/video3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.subscribe input[type="email"] {
+    height: 50px;
+    padding-right: 40px;
+    background-color: transparent;
+    border: 1px solid #9DA0A6;
+    border-radius: 3%;
+}
+
+.subscribe input[type="email"]::placeholder{
+    padding-left: 10px;
+}
+.subscribe button[type="submit"] {
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #5f4ecb;
+    color:#5f4ecb;
+}
+
+.subscribe button[type="submit"]:hover{
+    background-color: #5f4ecb;
+    color:white;
+}
+.book-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 70vh;
+    margin: 30px;
+    margin-bottom: 8px;
+    background-color: #f2f5f7; 
+}
+
+.background{
+    padding: 0px 180px;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .left {
+    /* flex: 1; */
+    order: 1;
+    width: 30%;
+
+    
+  }
+  .left img{
+    box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 25%;
+    margin-left: 30px;
+  }
+  
+  .top {
+    flex: 1;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 10px;
+
+  }
+  
+  .middle {
+    flex: 1;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 20px;
+
+  }
+  
+  .bottom {
+    flex: 1;
+    width: 30%;
+    height: 30%;
+  }
+  
+
+  .info {
+    width: 40%;
+    order: 3;
+  }
+
+.left img{
+    /* max-width: 50%;
+    height: auto;
+    object-fit: contain; */
+    width: 100%;
+  }
+.top img, .middle img, .bottom img{
+    width: 100%;
+    height: auto;
+
+  } 
+
+.bottom-detail{
+    display: flex;
+}
+
+.six-column{
+    flex: 0 0 60%;
+    max-width: 60% ;
+    padding-right: 30px;
+    margin: 30px 0px;
+}
+
+.card-price{
+    color: #5f4ecb !important;
+    font-weight: 600;
+}
+
+.four-column{
+    flex:0 0 40%;
+    max-width: 40%;
+    padding-left: 30px;
+    margin: 30px 0px;
+}
+
+.six-column b,  .four-column b{
+    font-size: 18px;
+}
+
+.top-detail{
+    display: flex;
+    width: 100%;
+}
+
+.box-detail{
+    background-color:white ;
+    padding: 5px 40px;
+    margin: 0px 55px;
+}
+
+.box1, .box2{
+    display: flex;
+}
+
+.box1{
+    width: 50%;
+}
+
+.box2 {
+    width: 50%;
+    justify-content: space-around;
+    border-bottom: 1px solid #c6c3c3;
+    padding: 10px 0px;
+}
+
+.box2 .fa{
+    font-size: 24px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.box2 .fa i{
+    font-weight: 300;
+}
+
+.add-to-cart-button{
+    color: #5f4ecb;
+    background-color: transparent;
+    border:1px solid #5f4ecb;
+    padding: 12px 24px;  /* Create a gap between the content and the edge of the button. */
+    font-size: 20px; /* Increase the font size of the text on the button */
+    border-radius: 13px;
+}
+
+.add-to-cart-button:hover{
+    background-color: #5f4ecb;
+    color: white;
+}
+
+
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid{
+    margin: 10px auto;
+    padding: 0px 85px !important;
+}
+.sub-category h2{
+    margin-left: 30px;
+}
+
+.sub-category{
+    background-color: white;
+    padding-top: 6px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #25272d;
+    height:300px;
+    padding: 10px 0px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer a{
+    color:white;
+
+}
+
+.footer-logo{
+    width:  25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+.footer-network i{
+    margin-left: 20px;
+}
+
+footer nav li {
+    padding: 0 10px;
+}
+footer nav li a{
+    font-size: 1.1rem;
+}
+footer i{
+    padding: 0 10px;
+}
+label {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    margin-right: 10px;
+  }
+
+.contact-div{
+    display:flex
+  }
+  
+.contact-pd{
+    padding: 0 338px;
+
+}
+.contact-preference label {
+    /* width: 300px; */
+    display: table-cell;
+}
+.newsletter label:nth-child(1){
+    /* width: 219px; */
+    display: table-cell;
+}
+
+.contact-preference, .newsletter{
+    display:flex;
+}
+
+select,
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+textarea {
+    display: inline-block;
+    width: calc(100% - 220px);
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+
+#contact-form input[type="text"], #contact-form input[type="email"],
+#contact-form input[type="tel"],select{
+    height: 40px;
+}
+
+#contact-form label,#contact-form p{
+    font-size: 18px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    height: 15px
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+outline: none;
+border-color: #333;
+}
+
+.contact-preference label,
+.newsletter label {
+    margin-right: 10px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: right;
+    }
+    
+    button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #666;
+    }
+
+    #contact-form{
+        padding:30px;
+    }
+
+
+
+@media (max-width: 960px) {
+    .container {
+        flex-direction: column;
+      }
+      .left{
+        margin: auto;
+        width: 50%;
+      }
+      
+      .right {
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 20px;
+      }
+      
+      .top, .middle, .bottom {
+        flex: unset;
+      }
+
+      
+    .bottom-detail{
+        display: block;
+    }
+    .six-column{
+        flex: 0 0 100%;
+        max-width: 100% ;
+        padding-left: 30px;
+        
+    }
+
+    .four-column{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .info{
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .box-detail{
+        background-color:#f2f5f7 ;
+        margin: 0px 0px;
+        padding: 5px 5px;
+    }
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    .carticon{
+        margin-top: 15px;
+    }
+
+    .background{
+        padding: 0px 20px;
+    }
+
+    .bestselling, .recommended, .new-arrivals{
+        justify-content: center !important;
+        margin: 20px 0px;
+    }
+    h1{
+        font-family: 'EB Garamond',serif !important;
+        font-weight: 600 !important;
+        font-size: 2.0rem !important;
+    }
+
+    h3{
+        font-family: 'EB Garamond',serif !important;
+        font-weight: 600 !important;
+        font-size: 1.8rem !important;
+    }
+
+    p,b{
+        font-size:1rem !important;
+    }
+
+    header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 200px;
+        background-color: #f2f5f7;
+        top:80px;
+        display: block;
+        transition: all .5s; 
+        
+    }
+    header nav ul li{
+        margin: 20px;
+        background-color: #f2f5f7;
+    }
+
+    header nav ul li a{
+        display: block;
+        font-size: 18px;
+        color: black;
+    }
+    header nav {
+        display: none;
+    }
+
+    .nav-search form{
+        margin: 0px;
+    }
+  
+  /* Display the nav element when the checkbox input is selected. */
+    #check:checked + nav {
+        display:block;
+    }
+
+    #check:not(:checked) + nav {
+        display: none;
+    }
+
+    .logo{
+        order:-1;
+    }
+  /* Set the display style for the label element */
+    .checkbtn {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        order: 2;
+        margin:0px;
+    }
+  
+  /* Adjust the icon's appearance on the interface." */
+    .checkbtn i {
+        font-size: 24px;
+        color: black;
+    }
+
+    .nav-search{
+        order:1;
+    }
+
+    .new_release {
+        flex-direction: column;
+      }
+    
+    .new_content {
+        order: 2;
+        text-align: center;
+        padding: 10px;
+      }
+    
+    .new_image {
+        order: 1;
+      }
+
+    .btn_buy{
+        width: 100%;
+    }
+
+    .lastest {
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-position: center center;
+    }
+    .icon {
+        order: 2;
+        padding: 20px;
+    }
+    .text {
+        order: 1;
+        margin-top: 20px;
+        padding: 20px;
+        width:71%;
+    }
+    .more-audio{
+        margin-bottom: 20px;
+    }
+    .box1, .box2 {
+        width: 100%;
+        padding: 0px 0px;
+        background-color: #f2f5f7;
+      }
+    
+    .contact-div{
+        display: block;
+    }
+    #contact-form label,
+    #contact-form input,
+    select,
+    textarea {
+      display: block;
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+  
+    #contact-form label{
+        font-size: 16px;
+    }
+    .newsletter label {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .seperate{
+        margin-top: 30px;
+        margin-left: 35px;
+        margin-right: 35px;
+        border-bottom: 2.5px solid rgb(95, 78, 203);
+    }
+    .container-fluid {
+        margin: 10px auto;
+        padding: 0px 30px !important;
+    }
+
+    h4{
+        font-size:20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .subscribe input[type="email"]{
+        margin-bottom: 5px;
+    }
+    .contact-pd{
+        padding: 0px 20px;
+    }
+
+    .book-category h1{
+        margin-top: 50px;
+    }
+    
+    footer{
+        height:max-content;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+
+    }
+    .footer-logo{
+        width:50%;
+    }
+    .footer-network{
+        width:100%;
+        margin: 50px 0px;
+    } 
+
+    footer nav{
+        margin-left: 1px;
+    }
+    footer nav ul{
+        display:block;
+    }
+    footer nav ul li{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+    footer nav ul li a{
+        font-size:16px
+    }
+}
+
+
+
+@media (min-width: 961px) {
+	
+    header nav ul li a{
+        font-size: 18px;
+
+    }
+}
+

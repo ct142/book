@@ -1,0 +1,129 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vo Chau Thang
+  ID: s3927178
+  Acknowledgement: github, w3school.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap">
+    <title>Contact</title>
+</head>
+<body>
+  <header>
+		<div class="logo">
+			<a href="index.html"><img src="image/logo-removebg-preview.png" alt="Logo"></a>
+		</div>
+        <input type="checkbox" id="check">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="category.html">Books</a></li>
+				<li><a href="book_detail.html">Book details</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+        <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+        <div class="nav-search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+    </header>  
+    <main>
+      <div class ="contact-pd">
+        <div class="contact-us">
+          <h1 style="padding:30px;font-family: 'EB Garamond',serif; font-weight: 700;font-size: 3.5rem;">Contact Us</h1>
+        </div>
+        <form id="contact-form" method="">
+            <label for="contact-purpose">Contact Purpose</label>
+            <select name="contact-purpose" id="contact-purpose" required>
+              <option value="" selected disabled>Choose one</option>
+              <option value="sell-books">I want to sell books</option>
+              <option value="buy-books">I want to buy books</option>
+            </select>
+            <br>
+            <div class="contact-div">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div class="contact-div">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div class="contact-div">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" required>
+            </div>
+            <br>
+            
+            <div class="contact-preference">
+              <label>Contact Preference</label>
+              <label for="by-email">By email<input type="checkbox" name="contact-preference" id="by-email" value="email" style="margin: 10px"></label>
+              <label for="by-phone">By phone<input type="checkbox" name="contact-preference" id="by-phone" value="phone" style="margin: 10px"></label>
+            </div>
+
+            <div class="newsletter">
+              <label>Receive Weekly Newsletter</label>
+              <div><label for="yes">Yes<input type="radio" name="newsletter" id="yes" value="yes" checked style="margin: 10px"></label></div>
+              <div><label for="no">No<input type="radio" name="newsletter" id="no" value="no" style="margin: 10px"></label></div>
+            </div>
+
+            <div class="contact-div">
+              <label for="notes">Extra Notes</label>
+              <textarea name="notes" id="notes" rows="5"></textarea>
+            </div>
+
+            <div class="buttons" style="margin-bottom: 80px;">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+          <div class="subscribe">
+            <h1 style="font-family: 'EB Garamond',serif; font-weight: 700;font-size: 3.5rem;">Be the first to know</h1>
+            <form action="#" method="post">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+          <div class="footer-logo" style="max-width:500px">
+              <img src="image/logo-removebg-preview.png" alt="" srcset="" style="max-width:100%">
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/terms">Terms</a></li>
+                  <li><a href="/copyright">Copyright</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </nav>
+          <div class="footer-network">
+                  <i class="fa fa-instagram" style="color: white; font-size: 24px;"></i>
+                  <i class="fa fa-facebook-f" style="color: white;font-size: 24px;"></i>
+                  <i class="fa fa-youtube-play" style="color: white; font-size: 24px;"></i>
+                  <i class="fa fa-twitter" style="color: white; font-size: 24px;"></i>
+          </div>
+      </div>
+      <div class="copyright">
+          <p style="color:white">Copyright © 2023 Book Store | Powered by Book Store</p>
+      </div>
+  </footer>
+</body>
+</html>

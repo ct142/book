@@ -1,0 +1,479 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vo Chau Thang
+  ID: s3927178
+  Acknowledgement: github, w3school.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap">    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="index.html"><img src="image/logo-removebg-preview.png" alt="Logo"></a>
+		</div>
+        <input type="checkbox" id="check">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="category.html">Books</a></li>
+				<li><a href="book_detail.html">Book details</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+        <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+        <div class="nav-search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+        </div>
+    </header>           
+    <main>
+        <div class="container-fluid">
+            <div class="book-category">
+                <h1>Fiction</h1>
+                <div class="sub-category">
+                    <h2>Literary Fiction</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/literaryFiction1.jpg" alt="literaryFiction1">
+                                <h4 class="card-title">The Day You Left</h4>
+                                <p>Author: J. Renee Olson</p>
+                                <p class="card-price"> $13.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/literaryFiction2.jpg" alt="literaryFiction2">
+                                <h4 class="card-title">The Silent Patient</h4>
+                                <p>Author:  Alex Michaelides</p>
+                                <p class="card-price">$10.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/literaryFiction3.jpg" alt="literaryFiction3">
+                                <h4 class="card-title">The Personal Librarian</h4>
+                                <p>Author: Marie Benedic</p>
+                                <p class="card-price">$10.99</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Romance</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/romance1.jpg" alt="Romance 1">
+                                <h4 class="card-title">When We Believed in Mermaids</h4>
+                                <p>Author: J. Renee Olson</p>
+                                <p class="card-price">$13.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/romance3.jpg" alt="romance 3">
+                                <h4 class="card-title">The Love of My Life</h4>
+                                <p>Author: Rosie Walsh</p>
+                                <p class="card-price">$14.10</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/romance2.jpg" alt="Romance 2">
+                                <h4 class="card-title">The Wife Before</h4>
+                                <p>Author: Shanora Williams</p>
+                                <p class="card-price">$13.56</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Science Fiction & Fantasy</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/ScienceFictionFantasy1.jpg" alt="ScienceFiction&Fantasy 1">
+                                <h4 class="card-title">The Midnight Library</h4>
+                                <p>Author: Matt Haig<</p>
+                                <p class="card-price">$13.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/ScienceFictionFantasy2.jpg" alt="ScienceFiction&Fantasy 2">
+                                <h4 class="card-title">Where Forest Meets the Stars</h4>
+                                <p>Author: Glendy Vanderah</p>
+                                <p class="card-price">$8.29</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/ScienceFictionFantasy3.jpg" alt="ScienceFiction&Fantasy 3">
+                                <h4 class="card-title">Fahrenheit 451</h4>
+                                <p>Author: Ray Bradbury</p>
+                                <p class="card-price">$12.99</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Mystery, Thriller & Suspensey</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Mystery1.jpg" alt="Mystery 1">
+                                <h4 class="card-title">Verity</h4>
+                                <p>Author: Colleen Hoover</p>
+                                <p class="card-price">$13.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Mystery2.jpg" alt="Mystery 2">
+                                <h4 class="card-title">The Housemaid's Secret</h4>
+                                <p>Author: Freida McFadden</p>
+                                <p class="card-price">$8.29</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Mystery3.jpg" alt="Mystery 3">
+                                <h4 class="card-title">The Last Thing He Told Me</h4>
+                                <p>Author: Laura Dave</p>
+                                <p class="card-price">$12.99</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-category">
+                <h1>Non-Fiction</h1>
+                <div class="sub-category">
+                    <h2>Biographies & Memoirs</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Biographies1.jpg" alt="lBiographies&MemoirsBook 1">
+                                <h4 class="card-title">The Wisdom of the Bullfrog</h4>
+                                <p>Author: Admiral William H. McRaven</p>
+                                <p class="card-price"> $17.48</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Biographies2.jpg" alt="Biographies&MemoirsBook 2">
+                                <h4 class="card-title">Can't Hurt Me</h4>
+                                <p>Author: David Goggins</p>
+                                <p class="card-price">$17.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Biographies3.jpg" alt="Biographies&MemoirsBook 3">
+                                <h4 class="card-title">Saved</h4>
+                                <p>Author: Benjamin Hall</p>
+                                <p class="card-price">$20.58</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Self-help</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/selfhelp1.jpg" alt="Self-help 1">
+                                <h4 class="card-title">Built to Move</h4>
+                                <p>Author: Kelly Starrett</p>
+                                <p class="card-price">$19.25</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="book_detail.html">
+                                <img src="image/selfhelp2.jpg" alt="Self-help 2">
+                                <h4 class="card-title">The Power of Now</h4>
+                                <p>Author: Eckhart Tolle</p>
+                                <p class="card-price">$8.89</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/selfhelp3.jpg" alt="Self-help 3">
+                                <h4 class="card-title">Angel Connections</h4>
+                                <p>Author: Isadora Bloom</p>
+                                <p class="card-price">$13.13</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-category">
+                <h1>Children's Books</h1>
+                <div class="sub-category">
+                    <h2>Picture Books</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/picturebook1.jpg"" alt="PictureBook 1">
+                                <h4 class="card-title">Knight Owl</h4>
+                                <p>Author:Christopher Denise</p>
+                                <p class="card-price">$14.39</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/picturebook2.jpg"" alt="PictureBook 2">
+                                <h4 class="card-title">My Big Bed - Touch and Feel Board Book</h4>
+                                <p>Author: Little Hippo Books</p>
+                                <p class="card-price">$19.95</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/picturebook3.jpg"" alt="PictureBook 3">
+                                <h4 class="card-title">Sleep in Your Big Kid Bed</h4>
+                                <p>Author: Amanda Hembrow</p>
+                                <p class="card-price">$11.96</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Chapter Books</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/chapterbook1.jpg" alt="Chapter Books 1">
+                                <h4 class="card-title">Amelia Bedelia</h4>
+                                <p>Author: Herman Parish</p>
+                                <p class="card-price">$15.96</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/chapterbook2.jpg" alt="Chapter Books 2">
+                                <h4 class="card-title">My Big Fat Zombie Goldfish Boxed Set</h4>
+                                <p>Author: Mo O'Hara</p>
+                                <p class="card-price">$11.59</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/chapterbook3.jpg" alt="Chapter Books 3">
+                                <h4 class="card-title">Trapped in a Video Game: The Complete Series</h4>
+                                <p>Author: Dustin Brady</p>
+                                <p class="card-price">$33.76</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Early Readers</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/earlyreader1.jpg" alt="Early Readers 1">
+                                <h4 class="card-title">Angela's Airplane</h4>
+                                <p>Author: Robert Munsch</p>
+                                <p class="card-price">$4.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/earlyreader2.jpg" alt="Early Readers 2">
+                                <h4 class="card-title">Ice Cream Soup</h4>
+                                <p>Author: Ann Ingalls</p>
+                                <p class="card-price">$5.59</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/earlyreader3.jpg" alt="Early Readers 3">
+                                <h4 class="card-title">Rocco the Rock Star</h4>
+                                <p>Author: Rachel Smith</p>
+                                <p class="card-price">$9.81</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-category">
+                <h1>Reference Books</h1>
+                <div class="sub-category">
+                    <h2>Dictionaries</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/dic1.jpg" alt="Dictionaries 1">
+                                <h4 class="card-title">>Merriam-Webster's Medical Dictionary</h4>
+                                <p>Author: Merriam-Webster </p>
+                                <p class="card-price">$6.19</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/dic2.jpg" alt="Dictionaries 2">
+                                <h4 class="card-title">The Penguin Dictionary of Philosophy</h4>
+                                <p>Author: Thomas Mautner</p>
+                                <p class="card-price">$20.00</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/dic3.jpg" alt="Dictionaries 3">
+                                <h4 class="card-title">A Dictionary of Popes</h4>
+                                <p>Author: J. N. D. Kelly</p>
+                                <p class="card-price">$8.76</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Encyclopedias</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Encyclopedias1.jpg" alt="Encyclopedias 1">
+                                <h4 class="card-title">The Chicken Encyclopedia</h4>
+                                <p>Author: Gail Damerow</p>
+                                <p class="card-price">$10.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Encyclopedias2.jpg" alt="Encyclopedias 2">
+                                <h4 class="card-title">First History Encyclopedia</h4>
+                                <p>Author: DK</p>
+                                <p class="card-price">$13.49</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/Encyclopedias3.jpg" alt="Encyclopedias 3">
+                                <h4 class="card-title">First How Things Work Encyclopedia</h4>
+                                <p>Author: DK</p>
+                                <p class="card-price">$13.49</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-category">
+                <h1>Textbooks</h1>
+                <div class="sub-category">
+                    <h2>Math and Science</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/math1.jpg" alt="Math and Science 1">
+                                <h4 class="card-title">>Applied Stochastic Differential Equations</h4>
+                                <p>Author: Simo Särkkä</p>
+                                <p class="card-price">$39.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/math2.jpg" alt="Math and Science 2">
+                                <h4 class="card-title">Polymer Science</h4>
+                                <p>Author: Sebastião V. Canevarolo Jr.</p>
+                                <p class="card-price">$74.26</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/math3.jpg" alt="Math and Science 3">
+                                <h4 class="card-title">Combinatorics: A Problem Oriented Approach</h4>
+                                <p>Author: Daniel A. Marcus</p>
+                                <p class="card-price">$39.31</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category">
+                    <h2>Humanities</h2>
+                    <div class="category">
+                        <div class="book">
+                            <a href="">
+                                <img src="image/human1.jpg" alt="Humanities 1">
+                                <h4 class="card-title">Landmarks in Humanities, 3rd Edition</h4>
+                                <p>Author: Gloria K. Fiero</p>
+                                <p class="card-price">$39.99</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/human2.jpg" alt="Humanities 2">
+                                <h4 class="card-title">Arts and Culture</h4>
+                                <p>Author: Janetta Rebold Benton</p>
+                                <p class="card-price">$82.16</p>
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="">
+                                <img src="image/human3.jpg" alt="Humanities 3">
+                                <h4 class="card-title">Humanities through the Arts</h4>
+                                <p>Author: F. David Martin</p>
+                                <p class="card-price">$64.54</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="subscribe" style="margin: 80px 0px;">
+            <h1 style="font-family: 'EB Garamond',serif; font-weight: 700;font-size: 3.5rem;">Be the first to know</h1>
+            <form action="#" method="post">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+              </form>
+        </div>
+        
+    </main>
+    
+
+
+	<footer>
+        <div class="footer">
+            <div class="footer-logo" style="max-width:500px">
+                <img src="image/logo-removebg-preview.png" alt="" srcset="" style="max-width:100%">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="/copyright">Copyright</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-network">
+                    <i class="fa fa-instagram" style="color: white; font-size: 24px;"></i>
+                    <i class="fa fa-facebook-f" style="color: white;font-size: 24px;"></i>
+                    <i class="fa fa-youtube-play" style="color: white; font-size: 24px;"></i>
+                    <i class="fa fa-twitter" style="color: white; font-size: 24px;"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="color:white">Copyright © 2023 Book Store | Powered by Book Store</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
